@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0F2C4C"/>
+  <rect y="612" width="1200" height="18" fill="#F26B5E"/>
+  <g transform="translate(86 74)">
+    <circle cx="22" cy="22" r="17" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-dasharray="86 24" transform="rotate(35 22 22)"/>
+    <circle cx="38" cy="26" r="5" fill="#F26B5E"/>
+    <text x="66" y="32" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="29" font-weight="700" letter-spacing="1">CYBERCON</text>
+    <text x="252" y="32" fill="#A9B7C4" font-family="Arial, sans-serif" font-size="27" font-weight="400" letter-spacing="7">SOLUTIONS</text>
+  </g>
+  <text x="86" y="285" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="82" font-weight="700" letter-spacing="-3">Technology,</text>
+  <text x="86" y="373" fill="#A9B7C4" font-family="Arial, sans-serif" font-size="82" font-weight="300" letter-spacing="-3">handled.</text>
+  <text x="88" y="455" fill="#FFFFFF" opacity="0.78" font-family="Arial, sans-serif" font-size="27">Proactive, security-first managed IT for growing South Florida businesses.</text>
+  <text x="88" y="546" fill="#F26B5E" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="4">MANAGED IT · CYBERSECURITY · CLOUD</text>
+</svg>

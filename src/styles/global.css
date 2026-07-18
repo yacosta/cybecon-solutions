@@ -1,0 +1,104 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/sora";
+@import "../../tokens.css";
+@import "../../styles.css";
+
+@theme {
+  --color-cyber-coral: #f26b5e;
+  --color-cyber-navy: #0f2c4c;
+  --color-cyber-steel: #5a6b7b;
+  --color-cyber-warm: #f7f4f1;
+  --font-display: "Sora Variable", "Sora", sans-serif;
+  --font-body: "Inter Variable", "Inter", sans-serif;
+}
+
+:root {
+  --cy-black: #0f2c4c;
+  --cy-charcoal: #0f2c4c;
+  --cy-graphite: #183653;
+  --cy-slate: #5a6b7b;
+  --cy-cloud: #e7e3df;
+  --cy-mist: #f7f4f1;
+  --cy-white: #ffffff;
+  --cy-magenta: #f26b5e;
+  --cy-magenta-dk: #d94f43;
+  --cy-magenta-soft: #fff0ed;
+  --cy-crimson: #d13b31;
+  --cy-crimson-dk: #a52d25;
+  --fg-brand: #c84238;
+  --fg-link: #c84238;
+  --fg-link-hover: #9f3029;
+  --font-display: "Sora Variable", "Sora", sans-serif;
+  --font-body: "Inter Variable", "Inter", sans-serif;
+  --bg-inverse: #0f2c4c;
+}
+
+@layer base {
+  :focus-visible {
+    outline: 3px solid var(--color-cyber-coral);
+    outline-offset: 3px;
+  }
+}
+
+/* Brand identity 2026: calm precision. Coral is deliberately constrained. */
+.site-header .logo-mark,
+.site-footer .logo-mark { display: none; }
+
+.logo::before {
+  content: "C";
+  display: grid;
+  place-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  border: 4px solid #0f2c4c;
+  border-right-color: #f26b5e;
+  border-radius: 999px;
+  color: transparent;
+  font-size: 0;
+}
+
+.site-footer .logo::before { border-color: #fff; border-right-color: #f26b5e; }
+.logo-word .lw-2 { color: #5a6b7b; font-weight: 400; letter-spacing: .14em; }
+.eyebrow.on-dark { color: #ff8176; }
+.hero-scrim { background: linear-gradient(90deg, rgba(15,44,76,.94) 0%, rgba(15,44,76,.76) 48%, rgba(15,44,76,.28) 100%); }
+.btn-primary { color: #0f2c4c; }
+.inverse, .site-footer { background-color: #0f2c4c; }
+
+/* WCAG 2.1 AA interaction floor. */
+.site-header nav a,
+.stepper button,
+.floating-cta,
+.socials a { min-width: 44px; min-height: 44px; }
+
+.btn,
+.skip-link { min-height: 44px; }
+
+.cta-lines a,
+.site-footer li a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.site-footer .footer-heading {
+  margin: 0 0 1rem;
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: .875rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}

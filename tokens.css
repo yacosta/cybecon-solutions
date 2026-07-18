@@ -1,0 +1,299 @@
+/* =============================================================
+   CYBERCON SOLUTIONS — Colors & Type Foundations
+   ============================================================= */
+
+/* ---------- Fonts ---------- */
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("./fonts/Nunito-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 200 1000;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("./fonts/Nunito-Italic-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 200 1000;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  /* ---------- Brand Palette ----------
+     Pulled directly from /uploads/colorkit.png.
+     Magenta is the signature spark; charcoal is the workhorse text/logo color. */
+  --cy-black:        #000000;
+  --cy-charcoal:     #424242;  /* logo "CYBERCON" */
+  --cy-graphite:     #2B2B2B;  /* dark UI text */
+  --cy-slate:        #5A5A5C;  /* secondary text */
+  --cy-cloud:        #E9E9EB;  /* light gray panel */
+  --cy-mist:         #F4F4F6;  /* ultra-light surface */
+  --cy-white:        #FFFFFF;
+
+  --cy-magenta:      #FE019A;  /* logo "Solutions" — primary brand accent */
+  --cy-magenta-dk:   #C8017A;  /* hover / press */
+  --cy-magenta-soft: #FFE6F4;  /* tint backgrounds, highlights */
+  --cy-crimson:      #C5003E;  /* secondary accent, alerts */
+  --cy-crimson-dk:   #94002E;
+
+  /* ---------- Semantic Tokens ---------- */
+  --fg-1:            var(--cy-graphite);    /* body text */
+  --fg-2:            var(--cy-slate);       /* muted text */
+  --fg-strong:       var(--cy-black);       /* headlines, max contrast */
+  --fg-inverse:      var(--cy-white);
+  --fg-brand:        var(--cy-magenta);
+  --fg-link:         var(--cy-magenta);
+  --fg-link-hover:   var(--cy-magenta-dk);
+
+  --bg-1:            var(--cy-white);       /* default page */
+  --bg-2:            var(--cy-mist);        /* alternating section */
+  --bg-3:            var(--cy-cloud);       /* card/panel divider */
+  --bg-inverse:      var(--cy-charcoal);    /* footer / dark hero */
+  --bg-brand:        var(--cy-magenta);
+  --bg-brand-soft:   var(--cy-magenta-soft);
+
+  --border-1:        #E4E4E7;               /* hairline */
+  --border-2:        #D1D1D6;               /* stronger */
+  --border-strong:   var(--cy-charcoal);
+
+  --success:         #1F8A5B;
+  --warning:         #E08A00;
+  --danger:          var(--cy-crimson);
+  --info:            var(--cy-magenta);
+
+  /* ---------- Type Families ---------- */
+  --font-display:    "Poppins", "Helvetica Neue", Arial, sans-serif;
+  --font-body:       "Nunito", "Poppins", system-ui, sans-serif;
+  --font-mono:       ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* ---------- Type Scale (rem, fluid optional) ---------- */
+  --fs-12:  0.75rem;
+  --fs-14:  0.875rem;
+  --fs-16:  1rem;
+  --fs-18:  1.125rem;
+  --fs-20:  1.25rem;
+  --fs-24:  1.5rem;
+  --fs-28:  1.75rem;
+  --fs-32:  2rem;
+  --fs-40:  2.5rem;
+  --fs-48:  3rem;
+  --fs-56:  3.5rem;
+  --fs-72:  4.5rem;
+
+  /* line-heights */
+  --lh-tight:  1.05;
+  --lh-snug:   1.2;
+  --lh-normal: 1.45;
+  --lh-relaxed:1.65;
+
+  /* tracking */
+  --tr-tight:   -0.02em;
+  --tr-snug:    -0.01em;
+  --tr-normal:  0;
+  --tr-wide:    0.04em;
+  --tr-eyebrow: 0.18em;
+
+  /* ---------- Spacing (4pt base) ---------- */
+  --sp-1:   4px;
+  --sp-2:   8px;
+  --sp-3:   12px;
+  --sp-4:   16px;
+  --sp-5:   24px;
+  --sp-6:   32px;
+  --sp-7:   48px;
+  --sp-8:   64px;
+  --sp-9:   96px;
+  --sp-10: 128px;
+
+  /* container widths */
+  --container-sm: 720px;
+  --container-md: 1040px;
+  --container-lg: 1240px;
+
+  /* ---------- Radii ---------- */
+  --r-0: 0;
+  --r-1: 2px;
+  --r-2: 4px;
+  --r-3: 8px;
+  --r-4: 14px;
+  --r-pill: 999px;
+
+  /* ---------- Shadows (used sparingly — flat-first) ---------- */
+  --sh-0: none;
+  --sh-1: 0 1px 2px rgba(20, 20, 30, 0.06);
+  --sh-2: 0 6px 18px -8px rgba(20, 20, 30, 0.18);
+  --sh-3: 0 18px 40px -18px rgba(20, 20, 30, 0.28);
+  --sh-brand-glow: 0 10px 30px -12px rgba(254, 1, 154, 0.45);
+
+  /* ---------- Motion ---------- */
+  --ease-out:   cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-in:    cubic-bezier(0.7, 0, 0.7, 0.3);
+  --ease-spring:cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast:   140ms;
+  --dur-base:   220ms;
+  --dur-slow:   420ms;
+}
+
+/* =============================================================
+   Semantic typography — apply directly via class .h1, .body, etc.
+   ============================================================= */
+.eyebrow,
+.h-eyebrow {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-12);
+  letter-spacing: var(--tr-eyebrow);
+  text-transform: uppercase;
+  color: var(--fg-brand);
+}
+
+.h1 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.5rem, 4.5vw, var(--fs-72));
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tr-tight);
+  color: var(--fg-strong);
+}
+
+.h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2rem, 3.2vw, var(--fs-48));
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tr-snug);
+  color: var(--fg-strong);
+}
+
+.h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-28);
+  line-height: var(--lh-snug);
+  color: var(--fg-strong);
+}
+
+.h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-20);
+  line-height: var(--lh-snug);
+  color: var(--fg-strong);
+}
+
+.lead {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--fs-20);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-2);
+}
+
+.body,
+p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--fs-16);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-1);
+}
+
+.body-sm,
+small {
+  font-family: var(--font-body);
+  font-size: var(--fs-14);
+  line-height: var(--lh-normal);
+  color: var(--fg-2);
+}
+
+.caption {
+  font-family: var(--font-body);
+  font-size: var(--fs-12);
+  line-height: var(--lh-normal);
+  color: var(--fg-2);
+  letter-spacing: var(--tr-wide);
+}
+
+.mono,
+code {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  background: var(--bg-2);
+  padding: 0.1em 0.35em;
+  border-radius: var(--r-2);
+  color: var(--cy-graphite);
+}
+
+a {
+  color: var(--fg-link);
+  text-decoration: none;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+a:hover {
+  color: var(--fg-link-hover);
+}
+
+/* base reset for previews */
+html, body {
+  background: var(--bg-1);
+  color: var(--fg-1);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
